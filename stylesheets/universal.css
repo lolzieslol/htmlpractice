@@ -1,0 +1,27 @@
+
+body{
+    background-color: aliceblue;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightblue;
+    padding: 5px;
+    margin: -5px;
+}
+
+button{
+    border:none;
+    background-color: rgb(5, 8, 23);
+    color:white;
+    padding:4px;
+    width:2.5em;
+    height: min-content;
+}
+
+button:hover{
+    background-color: rgb(30, 97, 97);
+}
+

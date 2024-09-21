@@ -1,0 +1,26 @@
+
+#hoved {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "v h";
+}
+
+div{
+    padding: 3px;
+    
+}
+
+div:hover{
+    color: #3e2222;
+}
+
+.venstre{
+    grid-area: v;
+    background-color: rgb(208, 228, 209);
+}
+
+.hoeyre{
+    grid-area: h;
+    background-color: rgb(236, 192, 111);
+}
