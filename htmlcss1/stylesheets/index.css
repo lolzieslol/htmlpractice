@@ -1,11 +1,15 @@
 
 #hoved {
-    margin-top: 10px;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-areas: "v h";
 }
 
+footer{
+    height: 200px;
+    /* height: clamp(100px,50%,200px); */
+    /* height: calc(clamp(200px,50%,400px)); */
+}
 div{
     padding: 3px;
     
@@ -18,9 +22,24 @@ div:hover{
 .venstre{
     grid-area: v;
     background-color: rgb(208, 228, 209);
+    container-type: inline-size;
+    container: minkontainer;
 }
 
 .hoeyre{
     grid-area: h;
     background-color: rgb(236, 192, 111);
+}
+
+@media(max-width: 550px){
+    #hoved{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@container (width < 400px){
+    div{
+        background-color: blue;
+    }
 }

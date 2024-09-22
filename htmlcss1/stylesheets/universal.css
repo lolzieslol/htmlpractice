@@ -1,3 +1,6 @@
+*{
+    margin:0;
+}
 
 body{
     background-color: aliceblue;
@@ -9,9 +12,29 @@ header{
     justify-content: space-between;
     background-color: lightblue;
     padding: 5px;
-    margin: -5px;
 }
 
+footer{
+    /* plassering i dokumentet */
+    /* position: absolute; */
+    /* position:fixed; */
+    /* left:0;
+    right: 0; */
+    bottom: 0;
+    
+    /* Størrelse */
+    min-height: 100px;
+    width: 100%;
+
+    /* inni */
+    padding: 5px;
+
+    /* farger */
+    background-color: black;
+    color: white;
+}
+
+/* button */
 button{
     border:none;
     background-color: rgb(5, 8, 23);
